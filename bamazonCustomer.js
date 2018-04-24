@@ -78,7 +78,7 @@ function start() {
                var productData = data[0];
 
                if (quantity <= productData.stock_quantity) {
-                   console.log("\n Product in stock. Your order has been placed. Thank you fo using Bamazon! \n");
+                   console.log("\n Product in stock. Your order has been placed. Thank you for using Bamazon! \n");
 
                    var updateQuery = "UPDATE products SET stock_quantity = " + (productData.stock_quantity - quantity) + " WHERE id = " + item;
 
